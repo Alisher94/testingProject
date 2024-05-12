@@ -1,8 +1,9 @@
 
-# Mobile Device Booking System
+# Phone Booking System
 
 ## Overview
-This application allows a mobile software testing team to manage the booking and return of various mobile phones. Users can check the availability of each device, see when it was last booked, and by whom.
+This application allows a mobile software testing team to manage the booking and return of various mobile phones. 
+Users can check the availability of each device, see when it was last booked, and by whom.
 
 ## Devices Supported
 - Samsung Galaxy S9
@@ -18,22 +19,19 @@ This application allows a mobile software testing team to manage the booking and
 ## Technology Stack
 - **Frontend:** React
 - **Backend:** Spring Boot
-- **Database:** H2 (in-memory for development purposes)
+- **Database:** H2 (in-memory for development purposes, external database may require additional steps to run docker composer)
 - **Containerization:** Docker Compose
 
 ## Getting Started
-
-### Prerequisites
-- Docker
-- Docker Compose
-- Node.js and npm
 
 ### Installation
 
 1. **Clone the repository**
    ```sh
-   git clone https://yourrepositorylink.com/project.git
-   cd project
+   git clone https://github.com/Alisher94/testingProject.git
+   cd testingProject
+   cd frontend
+   npm install
    ```
 
 2. **Build and run the Docker containers**
@@ -41,7 +39,8 @@ This application allows a mobile software testing team to manage the booking and
    docker-compose up --build
    ```
 
-   This command will start all the services defined in `docker-compose.yml`, including the React frontend, Spring Boot backend, and the H2 database.
+   This command will start all the services defined in `docker-compose.yml`, 
+   Docker composer uncludes the React frontend, Spring Boot backend, and the H2 database.
 
 3. **Access the application**
 
@@ -52,32 +51,17 @@ This application allows a mobile software testing team to manage the booking and
 ### Usage
 
 - **Booking a Phone:**
-  Navigate to the "Book Device" section in the application, select a device from the list, and enter your name to book the phone. Click on "Book" to confirm.
+  Navigate to the input in the list, and enter your name to book the phone. Click on "Book" to confirm.
+  (Didn't create separate User Model in order to avoid compexity)
 
 - **Returning a Phone:**
-  Go to the "Return Device" section, select the device you wish to return from the list, and click "Return".
+  Go to the device you wish to return from the list, and click "Return".
 
 - **Viewing Device Status:**
-  The main page displays all devices, their availability, last booking time, and the name of the person who last booked each device.
-
-## Development
-
-- **Frontend Development:**
-  Changes in the frontend code can be made in the `frontend` directory. The React app will automatically reload if you make edits.
-
-- **Backend Development:**
-  Backend code is located in the `backend` folder. Spring Boot has hot-reload capabilities with DevTools, which can be used for faster development cycles.
-
-## Contributing
-
-Please read `CONTRIBUTING.md` for details on our code of conduct, and the process for submitting pull requests to us.
-
-## License
-
-This project is licensed under the MIT License - see the `LICENSE.md` file for details.
+  The main page displays all devices, their availability, when there were booked, and the name of the person who last booked each device.
 
 ## Contact
 
-Your Name – your.email@example.com
+Alisher Abdullaev – a.alisher.abdullayev@gmail.com
 
-Project Link: [https://github.com/yourusername/projectname](https://github.com/yourusername/projectname)
+Project Link: [https://github.com/Alisher94/testingProject](https://github.com/Alisher94/testingProject)
