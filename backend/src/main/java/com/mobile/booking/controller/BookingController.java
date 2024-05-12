@@ -21,7 +21,6 @@ public class BookingController {
 
     @PostMapping("/book/{id}")
     public Phone bookPhone(@PathVariable Long id, @RequestBody UserDTO user) {
-        System.out.println(user.getName());
         return phoneService.bookPhone(id, user.getName());
     }
 
